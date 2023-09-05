@@ -1,0 +1,268 @@
+/* 头尾给个页面的样式相同 */
+
+/* 版心居中 */
+.wrapper{
+    margin: 0 auto;
+    width: 1240px;
+}
+/* 快捷导航 */
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 52px;
+
+}
+
+.shortcut  ul{
+    display: flex;
+    line-height: 52px;
+}
+.shortcut li a{
+    padding:0 15px;
+    height: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    
+    font-weight: 400;
+    border-right: 1px solid rgba(153,153,153,1);
+}
+.shortcut  li:last-child a{
+    border-right: 0;
+}
+
+
+.shortcut li .iconfont{
+    font-size: 16px;
+    /* vertical-align: middle; */
+    margin-right: 4px;
+}
+.shortcut .wrapper .login{
+    color:#5EB69C;
+}
+
+/* 头部 */
+.header{
+    /* 不能简写成margin:22px 0;否则不能居中 */
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: flex;
+    height: 88px;
+    
+}
+/* 头部logo区域 */
+.header .logo {
+    margin-right: 41px;
+    width: 200px;
+    height: 88px;
+}
+
+.header .logo h1 a{
+    display: block;
+    width: 200px;
+    height: 88px;
+    background-image: url(../images//logo.png);
+    font-size: 0;
+}
+/* 头部导航 */
+
+.header .nav {
+    margin-top: 33px;
+    margin-right: 28px;
+}
+.header .nav ul{
+    display:flex;
+}
+
+.header .nav ul li{
+    margin-right: 47px;
+}
+.header .nav ul a{
+    padding-bottom: 10px;
+    font-family: PingFangSC-Regular;
+    letter-spacing: 0;
+    text-align: left;
+    font-weight: 400;
+}
+
+.header .nav a:hover{
+    border-bottom: 2px solid #5EB69C;
+    
+    color: #5EB69C;
+}
+/* 头部搜索框 */
+.header .search{
+    display: flex;
+    margin-top: 33px;
+    margin-right: 45px;
+    width: 170px;
+    height: 34px;
+    border-bottom: 2px solid #F4F4F4;
+}
+.header .search span{
+    font-size: 18px;
+    color:#ccc;
+    margin-right: 8px;
+}
+.header .search input{
+    /* 浏览器默认生效input的默认宽度,所有flex:1;不生效,重置一下input的默认宽度 */
+    flex:1;
+    width: 0;
+}
+.header .search input::placeholder{
+    font-size: 16px;
+    color:#ccc;
+}
+/* 头部购物车 */
+.header .cart{
+    position: relative;
+    margin-top: 33px;
+}
+
+.header .cart .iconfont{
+    font-size:26px;
+}
+
+.header .cart i{
+    position: absolute;
+    
+    padding: 0 6px;
+    height: 18px;
+    background-color: #E26237;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* 底部 */
+.footer{
+    height: 600px;
+    background-color: #F5F5F5;
+}
+.footer .service{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 178px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.footer .service ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .service li{
+    display: flex;
+    width: 198px;
+    height: 58px;
+}
+.footer .service li p{
+    line-height: 58px;
+    font-family: PingFangSC-Regular;
+    font-size: 28px;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.footer .service li h5{
+    margin-right: 20px;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprite.png);
+}
+.footer .service li:nth-child(2) h5{
+    background-position: 0 -58px;
+}
+.footer .service li:nth-child(3) h5{
+    background-position: 0 -116px;
+}
+
+.footer .service li:nth-child(4) h5{
+    background-position: 0 -174px;
+}
+
+.footer .help{
+    padding-top: 60px;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 60px;
+    height: 302.5px;
+}
+.help .left{
+    display: flex;
+}
+.help .left dl{
+    margin-right: 84px;
+}
+.help .left dl:last-child{
+    margin-right: 0px;
+}
+.help .left dt{
+    margin-bottom: 30px;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.help .left dd{
+    margin-bottom: 10.5px;
+}
+.help .left a{
+    color: #969696;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: 400;
+}
+.help .left .iconfont{
+    padding-left: 5px;
+    color: #5EB69C ;
+    width: 16px;
+    height: 16px;
+}
+.help .right ul{
+    display: flex;
+}
+.help .right li{
+    vertical-align: middle;
+}
+.help .right li:first-child{
+    margin-right: 55px;
+}
+.help .right li div{
+    margin-bottom: 10px;
+}
+
+.help .right li p{
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    flex-shrink: 16px;
+    color: #969696;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+/* 版权 */
+.copyright{
+    margin-top:-15px;
+    text-align: center;
+}
+.copyright p{
+    margin-bottom: 10px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #A1A1A1;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 400;
+}
+.copyright p a{
+    color: #A1A1A1;
+    margin-right: 10px;
+}

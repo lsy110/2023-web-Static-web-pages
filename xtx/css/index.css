@@ -1,0 +1,413 @@
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+    background-color: pink;
+    overflow: hidden;
+}
+.banner .pic{
+    display: flex;
+    width: 3720px;
+}
+
+/* 侧导航 */
+.subnav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.42);
+}
+.subnav li{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 12px;
+    height: 50px;
+    line-height: 50px;
+    color:#f5f5f5;
+    cursor:pointer;
+}
+.subnav li:hover{
+    background-color: #00BE9A;
+}
+.subnav li a{
+    margin-right: 5px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: left;
+    font-weight: 500;
+}
+.subnav li .classify{
+    margin-right: 16px;
+    font-size: 16px;
+}
+.subnav li .iconfont{
+    font-size: 15px;
+}
+
+/* 圆点指示器 */
+.banner ol{
+    position: absolute;
+    bottom: 17px;
+    right: 16px;
+    display: flex;
+}
+.banner ol li{
+    margin-left:8px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner ol li i{
+    margin-top: 4px;
+    margin-left: 4px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+}
+
+/* 选中li是半透明,i白色 */
+.banner ol .current{
+    background-color:  rgba(255,255,255,0.5);;
+}
+.banner ol .current i{
+    background-color: #fff;
+}
+
+/* 新鲜好物 */
+/* 标题-公共样式 */
+.title{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.title .left{
+    display: flex;
+}
+.title .left h3{
+    font-family: PingFangSC-Regular;
+    font-size: 30px;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.title .left p{
+    /* align-self: flex-end; */
+    line-height: 60px;
+    margin-left: 35px;
+    font-family: PingFangSC-Regular;
+    color: #A1A1A1;
+    font-weight: 400;
+}
+.title .right{
+    display: flex;
+    padding-top: 13px;
+}
+.title .right .more{
+    margin-right: 10px;
+    font-family: PingFangSC-Regular;
+    color: #A1A1A1;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
+}
+
+.title .right .more .iconfont{
+    font-size: 12px;
+    color: #A1A1A1;
+}
+/* 好物内容-公共样式 */
+.bd ul{
+    display: flex;
+    justify-content: space-between;
+}
+.bd li{
+    width: 304px;
+    height: 404px;
+    background-color: #EEF9F4;
+}
+.bd li a .pic{
+    width:304px;
+    height:304;
+    margin-bottom: 17.5px;
+}
+.bd li a .txt{
+    text-align: center;
+}
+
+.bd li a .txt h4{
+    margin-top: 18px;
+    margin-bottom: 9px;
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.bd li a .txt p{
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #AA2113;
+    letter-spacing: 1.1px;
+    font-weight: 400;
+}
+.bd li a .txt p span{
+    font-size: 22px;
+}
+
+
+/* 人气推荐 */
+.recommond .bd li{
+    background-color: #fff;
+}
+.recommond .bd li h4{
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: #333333;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 400;
+}
+.recommond .bd li .txt p{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #A1A1A1;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* 热门品牌 */
+.hot{
+    height: 468px;
+    background-color: #F5F5F5;
+}
+.hot .wrapper{
+    height: 468px;
+    overflow: hidden;
+}
+.hot .title {
+    position: relative;
+    margin-bottom: 40px;
+}
+.hot .title .button{
+    display: flex;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    
+}
+.hot .title .button a{
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+.hot .title .button a span{
+    color: #fff;
+}
+.hot .title .button .pre{
+    margin-right: 12px;
+    background-color: #ddd;
+}
+.hot .title .button .next{
+    background-color: #00BE9A;
+}
+.hot .bd ul{
+    display: flex;
+    justify-content: space-between;
+}
+.hot .bd li{
+    width: 244px;
+    height: 306px;
+}
+/* 生鲜 */
+.fresh .title{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+
+.title .right ul{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 38px;
+}
+.title .right ul li a{
+    margin-right: 6px;
+    height: 20px;
+    padding: 0 7px;
+    text-align: center;
+}
+.title .right ul li .active,
+.title .right ul li a:hover{
+    background-color:#00BE9A;
+    color:white;
+}
+
+/* 生鲜内容，后面有相同内容，不加父亲类 */
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.content .left{
+    width: 248px;
+    height: 610px;
+}
+.content .right{
+    width: 968px;
+    height: 610px;
+}
+.content .right ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .right li{
+    position: relative;
+    padding: 15px 21px 0;
+    width: 242px;
+    height: 305px;
+    /* 为了隐藏绿色 */
+    overflow: hidden;
+}
+.content .right li .pic{
+    width: 200px;
+    height: 180px;
+}
+
+.content .info{
+    height: 60px;
+    margin-top: 14px;
+    margin-bottom: 5px;
+    line-height: 19px;
+}
+.content .price{
+    color:#AA2113;
+}
+.content span{
+    font-size: 22px;
+}
+
+
+/* 产品悬停后底部的绿色区域 */
+.content li .cover{
+    position: absolute;
+    left: 0;
+    bottom: -86px;
+    padding-top: 15px;
+    width: 242px;
+    height: 84px;
+    background-color: #00BE9A;
+    text-align: center;
+    color:#fff;
+    transition: all 0.5s;
+}
+.content li .cover p:nth-child(1){
+    font-size: 18px;
+}
+.content li .cover p:nth-child(2){
+    margin: 3px auto 6px;
+    width: 120px;
+    height: 1px;
+    background-color: rgba(255,255,255,0.11);
+    
+}
+.content li .cover p:nth-child(3){
+    font-size: 13px;
+}
+.content li .cover p:nth-child(3) .iconfont{
+    font-size: 14px;
+}
+.content li:hover .cover{
+    bottom: 0;
+}
+.content li:hover{
+    border:2px solid rgba(0,190,154,1);
+}
+
+/* 最新专题 */
+.topic{
+    margin-bottom: 40px;
+}
+.topic .title{
+    margin-top: 100px;
+}
+.topic .topic-bd ul{
+    display: flex;
+    justify-content: space-between;
+}
+.topic .topic-bd li{
+    width: 405px;
+    height: 335px;
+}
+.topic .topic-bd li .pic{
+    position: relative;
+    width: 405px;
+    height: 288px;
+}
+.topic-bd .txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    width: 405px;
+    height: 67px;
+    font-size: 14px;
+    color: #666666;
+}
+.topic-bd .txt .iconfont{
+    font-size: 16px;
+    color: #666666;
+}
+
+.topic-bd .txt .left .icon-favorites-fill{
+    color:#AA2113;
+}
+.topic-bd .txt .left i{
+    margin-right: 20px;
+}
+.topic-bd .cover{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    width: 405px;
+    height: 90px;
+    background-image: linear-gradient(180deg, rgba(137,137,137,0.00) 0%, rgba(0,0,0,0.90) 100%);
+}
+.topic-bd .cover  .left h4{
+    color:#fff;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.topic-bd .cover  .left h5{
+    color:#fff;
+    font-size: 16px;
+}
+
+.topic-bd .cover  .right{
+    padding: 0 7px;
+    height: 25px;
+    background-color: #fff;
+}
+.topic-bd .cover  .right{
+    color:#AA2113;
+    font-size: 16px;
+
+} 
+.topic-bd .cover  .right span{
+    font-size: 18px;
+} 
